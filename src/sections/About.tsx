@@ -11,23 +11,45 @@ const skills = [
 
 const education = [
   {
-    title: "Tecnicatura en Programación",
+    title: "Diplomatura en Programación Web Full Stack",
     place: "Universidad Tecnológica Nacional (UTN)",
-    year: "En curso · 2024 – 2026",
+    year: "En curso · 2025 – 2026",
+  },
+   {
+    title: " Certificación Desarrolladora Web .NET",
+    place: "MindHub LA Bootcamp",
+    year: "2024",
+  },
+   {
+    title: " Certificación Desarrolladora Full Stack Python",
+    place: "Codo a Codo 4.0 - Agencia de habilidades para el futuro",
+    year: "2023",
   },
   {
-    title: "Full Stack MERN Developer",
+    title: " Certificación Full Stack MERN Developer",
     place: "MindHub LA Bootcamp",
     year: "2021 – 2022",
   },
 ];
 
 const experience = [
+     {
+    title: "Desarrolladora Full Stack",
+    place: "ITR ",
+    desc: "Formación y desarrollo en tecnologías,Angular, React, HTML Y CSS.Participación en proyectos colaborativos bajo metodologías ágiles.Aplicación de buenas prácticas en desarrollo Full Stack",
+    year: "2022 - ACTUALMENTE",
+  },
+   {
+    title: "Desarrolladora Full Stack",
+    place: "ITR ",
+    desc: "Desarrollo de aplicación como herramienta empresarial para RRHH utilizando Angular y JAVA. Manejo avanzado del sistema de seguimiento laboral JIRA . Análisis de datos para la mejora continua y elaboración de procedimientos. Liderazgo y gestión de recursos humanos en proyectos específicos.",
+    year: "2023 - 2025",
+  },
   {
     title: "Mentora de Programación Frontend",
-    place: "MindHub LA · Accenture Argentina · EIDOS Global",
+    place: "MindHub LA · Accenture Argentina ",
     desc: "Mentoría en el programa Iniciatec: acompañé a nuevos desarrolladores en HTML, CSS, Bootstrap y Vue.js junto a un equipo de docentes especializados.",
-    year: "2022",
+    year: "2021 - 2023",
   },
 ];
 

@@ -29,10 +29,6 @@ export const Hero = () => {
 
           <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-[1.08] tracking-tight mb-6">
             Desarrollo Web<br />
-            con{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
-              ADN Creativo
-            </span>
           </h1>
 
           <p className="text-lg text-slate-500 leading-relaxed mb-10 max-w-md">
@@ -75,20 +71,12 @@ export const Hero = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 pb-6 mb-6 border-b border-slate-100">
-                <div className="w-11 h-11 bg-purple-50 rounded-xl flex items-center justify-center">
-                  <Palette size={20} className="text-purple-500" />
-                </div>
-                <div>
-                  <p className="font-bold text-slate-800 text-sm">Diseñadora Gráfica</p>
-                  <p className="text-xs text-slate-400 mt-0.5">Branding · UI/UX · Figma</p>
-                </div>
-              </div>
+             
 
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <p className="text-2xl font-extrabold text-blue-600">28+</p>
-                  <p className="text-xs text-slate-400 mt-1">Repos</p>
+                  <p className="text-2xl font-extrabold text-blue-600">30+</p>
+                  <p className="text-xs text-slate-400 mt-1">Repositorios</p>
                 </div>
                 <div>
                   <p className="text-2xl font-extrabold text-blue-600">3+</p>
@@ -96,14 +84,15 @@ export const Hero = () => {
                 </div>
                 <div>
                   <p className="text-2xl font-extrabold text-blue-600">UTN</p>
-                  <p className="text-xs text-slate-400 mt-1">Tecnicatura</p>
+                  <p className="text-xs text-slate-400 mt-1">Diplomatura</p>
                 </div>
+                
               </div>
             </div>
 
             {/* Badge flotante arriba */}
             <div className="absolute -top-3 -right-3 bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
-              MindHub · Accenture
+              MindHub · Accenture · ITR 
             </div>
 
             {/* Badge flotante abajo */}
