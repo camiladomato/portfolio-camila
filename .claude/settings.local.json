@@ -20,7 +20,8 @@
       "Bash(cmdkey /delete:git:https://github.com)",
       "Bash(cmdkey /delete:https://github.com)",
       "Bash(gh *)",
-      "Bash(git commit -m 'docs: README con descripción del portfolio y stack *)"
+      "Bash(git commit -m 'docs: README con descripción del portfolio y stack *)",
+      "Bash(git commit -m 'fix: remove unused Palette import in Hero *)"
     ]
   }
 }

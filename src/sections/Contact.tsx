@@ -5,7 +5,7 @@ export const Contact = () => {
   const [formData, setFormData] = useState({ nombre: "", servicio: "" });
 
   // SUSTITUYE ESTE NÚMERO POR EL TUYO (Formato: Código país + número sin el 15 ni el 0)
-  const WHATSAPP_NUMBER = "54911XXXXXXXX"; 
+  const WHATSAPP_NUMBER = "5491167313204"; 
 
   const handleWhatsApp = (e: React.SyntheticEvent) => {
     e.preventDefault();
