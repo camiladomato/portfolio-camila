@@ -1,4 +1,4 @@
-import { ArrowRight, Code, Palette, MapPin } from "lucide-react";
+import { ArrowRight, Code, MapPin } from "lucide-react";
 import { useReveal } from "../hooks/useReveal";
 
 export const Hero = () => {
