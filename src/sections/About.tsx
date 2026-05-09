@@ -35,9 +35,9 @@ const education = [
 const experience = [
      {
     title: "Desarrolladora Full Stack",
-    place: "ITR ",
-    desc: "Formación y desarrollo en tecnologías,Angular, React, HTML Y CSS.Participación en proyectos colaborativos bajo metodologías ágiles.Aplicación de buenas prácticas en desarrollo Full Stack",
-    year: "2022 - ACTUALMENTE",
+    place: "Freelance ",
+    desc: "Formación y desarrollo en tecnologías, Angular, React, HTML Y CSS. Participación en proyectos colaborativos bajo metodologías ágiles. Aplicación de buenas prácticas en desarrollo Full Stack",
+    year: "2022 - Actualidad",
   },
    {
     title: "Desarrolladora Full Stack",

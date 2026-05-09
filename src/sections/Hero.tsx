@@ -67,7 +67,7 @@ export const Hero = () => {
                 </div>
                 <div>
                   <p className="font-bold text-slate-800 text-sm">Full Stack Developer</p>
-                  <p className="text-xs text-slate-400 mt-0.5">React · Node.js · TypeScript</p>
+                  <p className="text-xs text-slate-400 mt-0.5">React · Node.js · JS ·TypeScript · Angular · JAVA</p>
                 </div>
               </div>
 
@@ -75,7 +75,7 @@ export const Hero = () => {
 
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <p className="text-2xl font-extrabold text-blue-600">30+</p>
+                  <p className="text-2xl font-extrabold text-blue-600">27+</p>
                   <p className="text-xs text-slate-400 mt-1">Repositorios</p>
                 </div>
                 <div>
