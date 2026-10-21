@@ -9,8 +9,8 @@ export const Hero = () => {
 
       {/* Blobs decorativos de fondo */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-blue-50 blur-3xl opacity-70" />
-        <div className="absolute -bottom-32 -left-32 w-[400px] h-[400px] rounded-full bg-indigo-50 blur-3xl opacity-50" />
+        <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-violet-50 blur-3xl opacity-70" />
+        <div className="absolute -bottom-32 -left-32 w-[400px] h-[400px] rounded-full bg-purple-50 blur-3xl opacity-50" />
       </div>
 
       <div
@@ -19,10 +19,10 @@ export const Hero = () => {
       >
         {/* Texto */}
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-medium mb-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-violet-50 border border-violet-100 text-violet-700 text-sm font-medium mb-8">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-violet-500" />
             </span>
             Disponible para nuevos proyectos
           </div>
@@ -39,7 +39,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-3 mb-10">
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-blue-700 hover:-translate-y-0.5 transition-all shadow-lg shadow-blue-100"
+              className="inline-flex items-center justify-center gap-2 bg-violet-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-violet-700 hover:-translate-y-0.5 transition-all shadow-lg shadow-violet-100"
             >
               Empezar mi proyecto <ArrowRight size={18} />
             </a>
@@ -62,7 +62,7 @@ export const Hero = () => {
           <div className="relative">
             <div className="bg-white rounded-2xl border border-slate-100 shadow-2xl shadow-slate-100 p-8 w-80">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center shadow-md shadow-blue-200">
+                <div className="w-11 h-11 bg-violet-600 rounded-xl flex items-center justify-center shadow-md shadow-violet-200">
                   <Code size={20} className="text-white" />
                 </div>
                 <div>
@@ -75,15 +75,15 @@ export const Hero = () => {
 
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <p className="text-2xl font-extrabold text-blue-600">27+</p>
+                  <p className="text-2xl font-extrabold text-violet-600">27+</p>
                   <p className="text-xs text-slate-400 mt-1">Repositorios</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-extrabold text-blue-600">3+</p>
+                  <p className="text-2xl font-extrabold text-violet-600">3+</p>
                   <p className="text-xs text-slate-400 mt-1">Stacks</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-extrabold text-blue-600">UTN</p>
+                  <p className="text-2xl font-extrabold text-violet-600">UTN</p>
                   <p className="text-xs text-slate-400 mt-1">Diplomatura</p>
                 </div>
                 
@@ -91,7 +91,7 @@ export const Hero = () => {
             </div>
 
             {/* Badge flotante arriba */}
-            <div className="absolute -top-3 -right-3 bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+            <div className="absolute -top-3 -right-3 bg-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
               MindHub · Accenture · ITR 
             </div>
 

@@ -6,7 +6,7 @@ const services = [
     title: "Desarrollo Web Profesional",
     description: "Sitios modernos, rápidos y adaptados a celulares. Ideal para comercios y profesionales que quieren destacar en internet.",
     icon: Monitor,
-    color: "bg-blue-50 text-blue-600",
+    color: "bg-violet-50 text-violet-600",
     features: ["Landing Pages", "E-commerce", "Mantenimiento mensual"],
   },
   {
@@ -35,7 +35,7 @@ export const Services = () => {
 
         {/* Header */}
         <div ref={refHeader} className={`mb-16 reveal ${visHeader ? "visible" : ""}`}>
-          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">Servicios</p>
+          <p className="text-sm font-bold text-violet-600 uppercase tracking-widest mb-3">Servicios</p>
           <h2 className="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
             ¿En qué puedo ayudarte?
           </h2>
@@ -60,7 +60,7 @@ export const Services = () => {
                   <Icon size={22} />
                 </div>
 
-                <h3 className="text-lg font-bold text-slate-800 mb-3 group-hover:text-blue-600 transition-colors duration-200">
+                <h3 className="text-lg font-bold text-slate-800 mb-3 group-hover:text-violet-600 transition-colors duration-200">
                   {service.title}
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">
