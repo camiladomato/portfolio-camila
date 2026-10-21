@@ -6,11 +6,17 @@ export interface Project {
   live?: string;
 }
 
+export interface Decision {
+  title: string;
+  text: string;
+}
+
 export interface FeaturedProject extends Project {
   label: string;
   problem: string;
   features: string[];
-  decisions: string[];
+  stack: string;
+  decisions: Decision[];
   role: string;
 }
 
@@ -28,25 +34,36 @@ export const featuredProject: FeaturedProject = {
     "Pantalla de llamados para sala de espera (TV) con aviso sonoro",
     "Auditoría de acciones y comprobante de turno para el paciente",
   ],
+  stack:
+    "React + Vite · Node.js, Express y TypeScript · Prisma y PostgreSQL (Neon) · JWT con control de acceso por rol · Cloudflare R2 y GitHub Actions para respaldos · despliegue en Vercel y Render.",
   decisions: [
-    "Caja append-only: los movimientos no se borran, se anulan con trazabilidad",
-    "Protección contra doble clic: el backend responde 409 ante pedidos simultáneos",
-    "Migraciones con backup previo y pruebas en una base separada",
-    "Backup diario automático y verificado en almacenamiento externo",
+    {
+      title: "Caja confiable",
+      text: "En un cobro no puede haber números que cambien sin dejar rastro. Modelé los movimientos como registro append-only: no se editan ni se borran, un error se corrige con una anulación que queda registrada (quién, cuándo y por qué). Así la caja de cada secretaria se puede auditar.",
+    },
+    {
+      title: "Concurrencia",
+      text: "Con varias personas en recepción, dos pedidos simultáneos pueden duplicar una acción (por ejemplo, llamar dos veces al mismo paciente). El backend rechaza el segundo con un 409, y la interfaz bloquea el botón mientras procesa. Para los solapamientos de agenda uso transacciones con aislamiento serializable.",
+    },
+    {
+      title: "Cambios seguros en producción",
+      text: "Toda migración de base de datos se prueba primero en una base separada y, en producción, se hace con copia de seguridad previa.",
+    },
+    {
+      title: "Recuperación ante desastres",
+      text: "Backup diario automático de la base en almacenamiento externo (R2), ejecutado con GitHub Actions y verificado en cada corrida.",
+    },
+    {
+      title: "Resiliencia de la base",
+      text: "Configuré el pool de conexiones para tolerar los cortes de conexiones ociosas de Neon sin tirar el servidor (tiempo de espera, keepAlive y manejo de errores).",
+    },
+    {
+      title: "Seguridad y permisos",
+      text: "Autenticación con JWT, rutas protegidas por rol y registro de auditoría de las acciones del sistema.",
+    },
   ],
   role: "Diseño, frontend, backend, base de datos, infraestructura, testing y puesta en producción, más el relevamiento de requisitos directo con el cliente.",
-  tags: [
-    "React",
-    "Vite",
-    "Node.js",
-    "Express",
-    "TypeScript",
-    "Prisma",
-    "PostgreSQL",
-    "JWT",
-    "GitHub Actions",
-    "Cloudflare R2",
-  ],
+  tags: ["React", "Node.js", "TypeScript", "PostgreSQL"],
   live: "https://www.vimconsultorios.com/",
 };
 
