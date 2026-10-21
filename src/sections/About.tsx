@@ -13,7 +13,7 @@ const education = [
   {
     title: "Diplomatura en Programación Web Full Stack",
     place: "Universidad Tecnológica Nacional (UTN)",
-    year: "En curso · 2025 – 2026",
+    year: "2025 – 2026",
   },
    {
     title: " Certificación Desarrolladora Web .NET",

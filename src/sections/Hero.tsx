@@ -97,7 +97,7 @@ export const Hero = () => {
 
             {/* Badge flotante abajo */}
             <div className="absolute -bottom-3 -left-3 bg-white border border-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-full shadow-md">
-              🎓 Estudiante UTN
+              🎓 Diplomada UTN
             </div>
           </div>
         </div>
