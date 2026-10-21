@@ -2,9 +2,9 @@ import { GraduationCap, Briefcase, Zap } from "lucide-react";
 import { useReveal } from "../hooks/useReveal";
 
 const skills = [
-  { category: "Frontend", items: ["React", "TypeScript", "Vue.js", "Angular", "HTML5", "CSS3", "Tailwind", "Bootstrap"] },
-  { category: "Backend", items: ["Node.js", "Express", "Python", "Java", "Spring Boot"] },
-  { category: "Base de Datos", items: ["MongoDB", "MySQL", "PostgreSQL"] },
+  { category: "Frontend", items: ["React", "TypeScript", "Vue.js", "Angular", "HTML5", "CSS3", "Tailwind", "Bootstrap", "Astro"] },
+  { category: "Backend", items: ["Node.js", "Express", "Python", "Java", "Spring Boot", ".NET"] },
+  { category: "Base de Datos", items: ["MongoDB", "MySQL", "PostgreSQL", "Prisma", "Firebase"] },
   { category: "Diseño & UX", items: ["Figma", "Branding", "Diseño Gráfico", "Identidad Visual"] },
   { category: "Herramientas", items: ["Git", "GitHub", "Vite", "React Native"] },
 ];
@@ -13,7 +13,7 @@ const education = [
   {
     title: "Diplomatura en Programación Web Full Stack",
     place: "Universidad Tecnológica Nacional (UTN)",
-    year: "En curso · 2025 – 2026",
+    year: "2025 – 2026 · Nota: Sobresaliente",
   },
    {
     title: " Certificación Desarrolladora Web .NET",
@@ -36,19 +36,19 @@ const experience = [
      {
     title: "Desarrolladora Full Stack",
     place: "Freelance ",
-    desc: "Formación y desarrollo en tecnologías, Angular, React, HTML Y CSS. Participación en proyectos colaborativos bajo metodologías ágiles. Aplicación de buenas prácticas en desarrollo Full Stack",
+    desc: "Desarrollo de proyectos web full stack para distintos clientes. Destacado: sistema de gestión de turnos para un centro médico, hecho de punta a punta (arquitectura, frontend, backend, base de datos y despliegue). También: sitio para estudio jurídico, blog con Astro + TinaCMS y este portfolio.",
     year: "2022 - Actualidad",
   },
    {
     title: "Desarrolladora Full Stack",
     place: "ITR ",
-    desc: "Desarrollo de aplicación como herramienta empresarial para RRHH utilizando Angular y JAVA. Manejo avanzado del sistema de seguimiento laboral JIRA . Análisis de datos para la mejora continua y elaboración de procedimientos. Liderazgo y gestión de recursos humanos en proyectos específicos.",
-    year: "2023 - 2025",
+    desc: "Ingresé por un bootcamp interno de .NET y me especialicé también en Java y Angular. Desarrollé desde cero la aplicación central de la empresa: una herramienta de RRHH que centraliza sub-aplicaciones, datos de empleados, evaluaciones mensuales y roles, participando en todo el proceso hasta el deploy a producción. Trabajo ágil con Scrum y JIRA.",
+    year: "2024 - 2025",
   },
   {
-    title: "Mentora de Programación Frontend",
+    title: "Mentora y Coordinadora de Mentores",
     place: "MindHub LA · Accenture Argentina ",
-    desc: "Mentoría en el programa Iniciatec: acompañé a nuevos desarrolladores en HTML, CSS, Bootstrap y Vue.js junto a un equipo de docentes especializados.",
+    desc: "Mentoría en el programa Iniciatec: acompañé a nuevos desarrolladores en HTML, CSS, Bootstrap y Vue.js, dictando workshops y dando feedback técnico. En 2023 coordiné al equipo de mentores: capacitación de mentores junior, seguimiento de dailies y retros.",
     year: "2021 - 2023",
   },
 ];

@@ -75,7 +75,7 @@ export const Hero = () => {
 
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <p className="text-2xl font-extrabold text-violet-600">27+</p>
+                  <p className="text-2xl font-extrabold text-violet-600">30+</p>
                   <p className="text-xs text-slate-400 mt-1">Repositorios</p>
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export const Hero = () => {
 
             {/* Badge flotante abajo */}
             <div className="absolute -bottom-3 -left-3 bg-white border border-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-full shadow-md">
-              🎓 Estudiante UTN
+              🎓 Diplomada UTN
             </div>
           </div>
         </div>
