@@ -28,7 +28,7 @@ export const Contact = () => {
             
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500">
+                <div className="w-12 h-12 bg-violet-600/20 rounded-full flex items-center justify-center text-violet-500">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -52,7 +52,7 @@ export const Contact = () => {
                   href="https://www.linkedin.com/in/camila-domato/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600/20 text-blue-400 hover:bg-blue-600/30 transition-all text-sm font-medium"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-violet-600/20 text-violet-400 hover:bg-violet-600/30 transition-all text-sm font-medium"
                 >
                   <ExternalLink size={18} /> LinkedIn
                 </a>
@@ -77,14 +77,14 @@ export const Contact = () => {
                   required
                   type="text" 
                   placeholder="Ej: Juan Pérez"
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-blue-500 focus:outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-violet-500 focus:outline-none transition-all"
                   onChange={(e) => setFormData({...formData, nombre: e.target.value})}
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">¿En qué puedo ayudarte?</label>
                 <select 
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-blue-500 focus:outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-violet-500 focus:outline-none transition-all"
                   onChange={(e) => setFormData({...formData, servicio: e.target.value})}
                 >
                   <option className="bg-gray-900" value="Página Web">Página Web</option>

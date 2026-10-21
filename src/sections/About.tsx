@@ -63,7 +63,7 @@ export const About = () => {
 
         {/* Header */}
         <div ref={refHeader} className={`mb-16 reveal ${visHeader ? "visible" : ""}`}>
-          <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">Sobre mí</p>
+          <p className="text-sm font-bold text-violet-600 uppercase tracking-widest mb-3">Sobre mí</p>
           <h2 className="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
             Código + Diseño.<br />Una sola persona.
           </h2>
@@ -78,7 +78,7 @@ export const About = () => {
           {/* Skills */}
           <div>
             <div className="flex items-center gap-2 mb-8">
-              <Zap size={16} className="text-blue-600" />
+              <Zap size={16} className="text-violet-600" />
               <h3 className="font-bold text-slate-800 text-sm uppercase tracking-widest">Stack Tecnológico</h3>
             </div>
             <div className="space-y-6">
@@ -91,7 +91,7 @@ export const About = () => {
                     {group.items.map((skill) => (
                       <span
                         key={skill}
-                        className="px-3 py-1.5 bg-white border border-slate-200 text-slate-600 text-sm font-medium rounded-lg hover:border-blue-400 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 cursor-default"
+                        className="px-3 py-1.5 bg-white border border-slate-200 text-slate-600 text-sm font-medium rounded-lg hover:border-violet-400 hover:text-violet-600 hover:bg-violet-50 transition-all duration-200 cursor-default"
                       >
                         {skill}
                       </span>
@@ -108,15 +108,15 @@ export const About = () => {
             {/* Formación */}
             <div>
               <div className="flex items-center gap-2 mb-6">
-                <GraduationCap size={16} className="text-blue-600" />
+                <GraduationCap size={16} className="text-violet-600" />
                 <h3 className="font-bold text-slate-800 text-sm uppercase tracking-widest">Formación</h3>
               </div>
               <div className="space-y-6 border-l-2 border-slate-200 pl-6">
                 {education.map((ed) => (
                   <div key={ed.title} className="relative">
-                    <div className="absolute -left-[29px] top-1 w-3 h-3 rounded-full bg-blue-600 border-2 border-white ring-2 ring-blue-100" />
+                    <div className="absolute -left-[29px] top-1 w-3 h-3 rounded-full bg-violet-600 border-2 border-white ring-2 ring-violet-100" />
                     <p className="font-semibold text-slate-800">{ed.title}</p>
-                    <p className="text-sm text-blue-600 mt-0.5">{ed.place}</p>
+                    <p className="text-sm text-violet-600 mt-0.5">{ed.place}</p>
                     <p className="text-xs text-slate-400 mt-1.5">{ed.year}</p>
                   </div>
                 ))}
@@ -126,15 +126,15 @@ export const About = () => {
             {/* Experiencia */}
             <div>
               <div className="flex items-center gap-2 mb-6">
-                <Briefcase size={16} className="text-blue-600" />
+                <Briefcase size={16} className="text-violet-600" />
                 <h3 className="font-bold text-slate-800 text-sm uppercase tracking-widest">Experiencia</h3>
               </div>
               <div className="space-y-6 border-l-2 border-slate-200 pl-6">
                 {experience.map((exp) => (
                   <div key={exp.title} className="relative">
-                    <div className="absolute -left-[29px] top-1 w-3 h-3 rounded-full bg-indigo-500 border-2 border-white ring-2 ring-indigo-100" />
+                    <div className="absolute -left-[29px] top-1 w-3 h-3 rounded-full bg-purple-500 border-2 border-white ring-2 ring-purple-100" />
                     <p className="font-semibold text-slate-800">{exp.title}</p>
-                    <p className="text-sm text-blue-600 mt-0.5">{exp.place}</p>
+                    <p className="text-sm text-violet-600 mt-0.5">{exp.place}</p>
                     <p className="text-sm text-slate-500 mt-2 leading-relaxed">{exp.desc}</p>
                     <p className="text-xs text-slate-400 mt-2">{exp.year}</p>
                   </div>
