@@ -7,12 +7,13 @@ import {
   GitBranch,
   DatabaseBackup,
   ServerCog,
+  RefreshCw,
 } from "lucide-react";
 import { projects, featuredProject, type Project } from "../data/projects";
 import { useReveal } from "../hooks/useReveal";
 
 // Íconos en el mismo orden que las decisiones técnicas
-const decisionIcons = [Receipt, Users, GitBranch, DatabaseBackup, ServerCog, ShieldCheck];
+const decisionIcons = [Receipt, Users, GitBranch, DatabaseBackup, ServerCog, RefreshCw, ShieldCheck];
 
 const Tag = ({ label }: { label: string }) => (
   <span className="bg-slate-50 text-slate-500 border border-slate-100 px-2.5 py-1 rounded-md text-xs font-medium">
@@ -124,7 +125,13 @@ export const Projects = () => {
               {f.decisions.map((d, i) => {
                 const Icon = decisionIcons[i % decisionIcons.length];
                 return (
-                  <div key={d.title} className="flex gap-4 bg-slate-50 border border-slate-100 rounded-xl p-5">
+                  <div
+                    key={d.title}
+                    className={`flex gap-4 bg-slate-50 border border-slate-100 rounded-xl p-5 ${
+                      // Si quedan impares, la última ocupa todo el ancho
+                      i === f.decisions.length - 1 && f.decisions.length % 2 === 1 ? "md:col-span-2" : ""
+                    }`}
+                  >
                     <div className="w-9 h-9 shrink-0 rounded-lg bg-violet-50 border border-violet-100 flex items-center justify-center">
                       <Icon size={18} className="text-violet-600" />
                     </div>

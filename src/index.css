@@ -51,3 +51,5 @@ body {
 .stagger.visible > *:nth-child(4) { animation-delay: 0.24s; }
 .stagger.visible > *:nth-child(5) { animation-delay: 0.32s; }
 .stagger.visible > *:nth-child(6) { animation-delay: 0.40s; }
+.stagger.visible > *:nth-child(7) { animation-delay: 0.48s; }
+.stagger.visible > *:nth-child(8) { animation-delay: 0.56s; }

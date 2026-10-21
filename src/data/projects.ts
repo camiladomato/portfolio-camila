@@ -58,6 +58,10 @@ export const featuredProject: FeaturedProject = {
       text: "Configuré el pool de conexiones para tolerar los cortes de conexiones ociosas de Neon sin tirar el servidor (tiempo de espera, keepAlive y manejo de errores).",
     },
     {
+      title: "Tiempo real sin WebSockets",
+      text: "La agenda y la pantalla de llamados se actualizan solas con polling. La interfaz compara los datos y solo vuelve a renderizar cuando algo cambió de verdad, así no hay parpadeos.",
+    },
+    {
       title: "Seguridad y permisos",
       text: "Autenticación con JWT, rutas protegidas por rol y registro de auditoría de las acciones del sistema.",
     },
@@ -69,10 +73,17 @@ export const featuredProject: FeaturedProject = {
 
 export const projects: Project[] = [
   {
+    title: "Mate Aventura",
+    description: "Juego de matemáticas que hice para mi hija: mundos con niveles, modo contrarreloj, monedas, logros y tienda de avatares. Login anónimo para chicos y progreso guardado en la nube, con reglas de seguridad por jugador.",
+    tags: ["React", "Vite", "Tailwind", "Zustand", "Firebase"],
+    live: "https://juego-matematicas-self.vercel.app/"
+  },
+  {
     title: "WhatsApp Clone",
     description: "Réplica funcional de la interfaz de mensajería construida con React. Chat en tiempo real con diseño responsive fiel al original, desarrollada para UTN.",
     tags: ["React", "JavaScript", "Vite", "CSS"],
-    link: "https://github.com/camiladomato/clone-whatsapp-camila-domato-react"
+    link: "https://github.com/camiladomato/clone-whatsapp-camila-domato-react",
+    live: "https://clone-whatsapp-camila-domato-react.vercel.app/ingresar"
   },
   {
     title: "Estudio Jurídico",
@@ -96,7 +107,8 @@ export const projects: Project[] = [
     title: "MyTinerary",
     description: "Aplicación full-stack de turismo con itinerarios y actividades por ciudad. Autenticación de usuarios, stack MERN completo con React Native.",
     tags: ["React", "Node.js", "MongoDB", "Express"],
-    link: "https://github.com/camiladomato/MyTinerary-Domato"
+    link: "https://github.com/camiladomato/MyTinerary-Domato",
+    live: "https://my-tinerary-domato.vercel.app/"
   },
   {
     title: "Home Banking",
