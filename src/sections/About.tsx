@@ -5,7 +5,7 @@ const skills = [
   { category: "Frontend", items: ["React", "TypeScript", "Vue.js", "Angular", "HTML5", "CSS3", "Tailwind", "Bootstrap", "Astro"] },
   { category: "Backend", items: ["Node.js", "Express", "Python", "Java", "Spring Boot", ".NET"] },
   { category: "Base de Datos", items: ["MongoDB", "MySQL", "PostgreSQL", "Prisma", "Firebase"] },
-  { category: "Diseño & UX", items: ["Figma", "Branding", "Diseño Gráfico", "Identidad Visual"] },
+  { category: "Diseño UI", items: ["Figma", "UX/UI", "Diseño Responsivo", "Prototipado"] },
   { category: "Herramientas", items: ["Git", "GitHub", "Vite", "React Native"] },
 ];
 
@@ -65,11 +65,11 @@ export const About = () => {
         <div ref={refHeader} className={`mb-16 reveal ${visHeader ? "visible" : ""}`}>
           <p className="text-sm font-bold text-violet-600 uppercase tracking-widest mb-3">Sobre mí</p>
           <h2 className="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Código + Diseño.<br />Una sola persona.
+            De la idea a producción.<br />De punta a punta.
           </h2>
           <p className="text-slate-500 max-w-xl leading-relaxed">
-            Desarrolladora Full Stack y Diseñadora Gráfica. Combino las dos disciplinas
-            para entregar productos completos, desde la base de datos hasta la identidad visual.
+            Desarrolladora Full Stack. Me involucro en todo el ciclo de un producto:
+            desde entender lo que necesita el cliente hasta la base de datos, la interfaz y el despliegue a producción.
           </p>
         </div>
 
