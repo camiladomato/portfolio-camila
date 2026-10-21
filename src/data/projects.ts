@@ -2,8 +2,53 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
-  link: string;
+  link?: string;
+  live?: string;
 }
+
+export interface FeaturedProject extends Project {
+  label: string;
+  problem: string;
+  features: string[];
+  decisions: string[];
+  role: string;
+}
+
+export const featuredProject: FeaturedProject = {
+  label: "Proyecto real · Cliente",
+  title: "VIM Consultorios",
+  description:
+    "Sistema de gestión de turnos y recepción para un centro médico. Aplicación web full stack diseñada, desarrollada y testeada de punta a punta como única desarrolladora.",
+  problem:
+    "Un centro médico con varios consultorios necesitaba ordenar la agenda de turnos, la recepción de pacientes y el cobro diario, llevando la caja por persona.",
+  features: [
+    "Roles diferenciados: administración, secretaría, médicos y ecografistas",
+    "Agenda por médico y consultorio, con excepciones y validación de solapamientos",
+    "Recepción y caja con pago combinado, ausencias y resumen por usuario",
+    "Pantalla de llamados para sala de espera (TV) con aviso sonoro",
+    "Auditoría de acciones y comprobante de turno para el paciente",
+  ],
+  decisions: [
+    "Caja append-only: los movimientos no se borran, se anulan con trazabilidad",
+    "Protección contra doble clic: el backend responde 409 ante pedidos simultáneos",
+    "Migraciones con backup previo y pruebas en una base separada",
+    "Backup diario automático y verificado en almacenamiento externo",
+  ],
+  role: "Diseño, frontend, backend, base de datos, infraestructura, testing y puesta en producción, más el relevamiento de requisitos directo con el cliente.",
+  tags: [
+    "React",
+    "Vite",
+    "Node.js",
+    "Express",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "JWT",
+    "GitHub Actions",
+    "Cloudflare R2",
+  ],
+  live: "https://www.vimconsultorios.com/",
+};
 
 export const projects: Project[] = [
   {
